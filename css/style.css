@@ -1,0 +1,75 @@
+:root {
+	--white: hsl(0, 0%, 100%);
+	--light-gray: hsl(212, 45%, 89%);
+	--grayish-blue: hsl(220, 15%, 55%);
+	--dark-blue: hsl(218, 44%, 22%);
+	--light-blue: hsl(216, 95%, 57%);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: var(--light-gray);
+	font-family: 'Outfit', sans-serif;
+	font-size: 1.5rem;
+	color: var(--grayish-blue);
+}
+
+.card {
+	padding: 1.5em 1em;
+	width: 100%;
+	max-width: 310px;
+	background-color: var(--white);
+	border-radius: 1rem;
+	text-align: center;
+}
+
+.card-img {
+	width: 260px;
+	height: 260px;
+	border-radius: 1rem;
+}
+
+.card-title {
+	margin: 0.5em 0 0.8em;
+	font-size: 2.2rem;
+	color: var(--dark-blue);
+}
+
+.card-text {
+    padding: 0 1.3em;
+	line-height: 1.5;
+}
+
+.attribution {
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 1em;
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: var(--grayish-blue);
+	transition: color 0.3s;
+}
+
+.attribution a:hover {
+	color: var(--light-blue);
+}
