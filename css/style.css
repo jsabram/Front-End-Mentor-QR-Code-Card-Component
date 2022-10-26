@@ -38,6 +38,7 @@ body {
 	background-color: var(--white);
 	border-radius: 1rem;
 	text-align: center;
+    box-shadow: 0 0 1rem #999;
 }
 
 .card-img {
